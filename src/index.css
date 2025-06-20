@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@screens{
+  sm: 350px;
+  md: 768px;
+  lg:1024px;
+  xl: 1280px;
+  2xl:1536px;
+}
+animation{
+  spin-slow: spin 20s linear infinite;
+}
+@theme{
+  
+  --color-darkBrown:#2c2523;
+  --color-brown:#53423e;
+  --color-lightBrown:#7a6662;
+  --color-black:#1e1917;
+  --color-cyan:#15d1e9;
+  --color-lightcyan:#88e5fe;
+  --color-darkcyan:#889fb3;
+  --color-orange:#fb9718;
+  --color-lightOrange:#fac27b;
+  --color-darkOrange:#d28422;
+  --color-gray:#626965;
+  --color-lightGray:#978580;
+  --color-darkGray:#3f4441;
+}
+@extend{
+  cyanShadow: '0px 0px 20px 0px rgba(94,206,220,0.5)';
+  cyanMediumShadow:'10px 10px 200px 150px rgba(94,206,220,0.5)';
+  orangeMediumShadow: '10px 10px 200px 150px rgba(240,169,79,0.5)';
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+}
+/* @font{
+  ['system-ui'];
+  ['Avenir'];
+  'Helvetica'; 
+  Arial; 
+  sans-serif; 
+  'Josefin Sans'; 
+  sans-serif; 
+  'Roboto'; 
+} */
+
+:root {
+  font-family: 'system-ui';
+  /* 'Avenir', 'Helvetica', Arial, sans-serif, 'Josefin Sans', sans-serif, 'Roboto', sans-serif; */
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #f2f2f6;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #fb9718;
+}
+
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+ 
+
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+
+  
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: inset 2px 2px 5px rgba(0,0,0,0.6), inset -2px -2px 5px rgba(255,255,255,0.1);
+}
+
+
+
+
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color:#2c2523 ;
+  }
+  a:hover {
+    color: #fb9718;
+  }
+
+}
