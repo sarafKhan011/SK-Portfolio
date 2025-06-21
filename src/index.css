@@ -67,9 +67,9 @@ a {
   color: #f2f2f6;
   text-decoration: inherit;
 }
-a:hover {
+/* a:hover {
   color: #fb9718;
-}
+} */
 
 
 h1 {
@@ -103,8 +103,8 @@ button:focus-visible {
     color: #213547;
     background-color:#2c2523 ;
   }
-  a:hover {
+  /* a:hover {
     color: #fb9718;
-  }
+  } */
 
 }

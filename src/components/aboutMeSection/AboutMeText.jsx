@@ -13,12 +13,13 @@ const AboutMeText = () => {
       </p>
 
       <a
-        href="/M-Saraf-Khan-CV.pdf"
-        download
-        className='border border-orange gap-2 rounded-full py-2 px-4 text-lg flex items-center mt-10 hover:bg-cyan transition-all duration-500 cursor-pointer md:self-start text-white hover:text-cyan'
-      >
-         CV <FaDownload />
-      </a>
+  href="/SarafKhan.pdf"
+  download
+  className="border border-orange gap-2 rounded-full py-2 px-4 text-lg flex items-center mt-10 hover:bg-orange hover:text-amber-50 transition"
+>
+  CV <FaDownload />
+</a>
+
     </div>
   )
 }

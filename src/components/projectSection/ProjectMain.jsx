@@ -8,8 +8,8 @@ const projects = [{
     name: 'Car Rental',
     year: 'Mar2023',
     align: 'right',
-    image: '../../public/images/lap.jpg',
-    link: '#',
+    image: '/images/P-1.png',
+    link: 'https://github.com/sarafKhan011/car-rental-.git',
 },
 {
     name: 'Resturant Table Reservation',
@@ -22,8 +22,8 @@ const projects = [{
     name: 'Car Sale',
     year: 'Jun2025',
     align: 'right',
-    image: '../../public/images/lap.jpg',
-    link: '#',
+    image: '/images/P-3.png',
+    link: 'https://github.com/sarafKhan011/Car-Sale',
 },
 ]
 
@@ -40,7 +40,7 @@ const ProjectMain = () => {
       </motion.div>
       <div className='flex flex-col gap-20 max-w-[900px] mx-auto mt-12  '>
         {projects.map((item,index)=>{
-            return <SingleProject key={index} name={item.name} year={item.year} align={item.align} image={item.image} />
+            return <SingleProject key={index} name={item.name} year={item.year} align={item.align} image={item.image} link={item.link} />
         })}
       </div>
     </div>
