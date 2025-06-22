@@ -6,7 +6,7 @@ const SubSkills = () => {
       <div className='absolute bg-gradient-to-r from-orange to-cyan opacity-50 w-full h-full '>
 
       </div>
-      <img src="../../public/images/lap2.jpg" alt="lap image" />
+      <img src="/images/lap2.jpg" alt="lap image" />
     </div>
   )
 }
