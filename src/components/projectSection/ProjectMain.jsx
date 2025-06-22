@@ -15,7 +15,7 @@ const projects = [{
     name: 'Resturant Table Reservation',
     year: 'Dec2024',
     align: 'left',
-    image: '../../public/images/lap.jpg',
+    image: '/images/lap.jpg',
     link: '#',
 },
 {
