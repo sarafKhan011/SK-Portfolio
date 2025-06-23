@@ -1,11 +1,11 @@
 import React from 'react'
-import { FaCss3Alt, FaHtml5, FaReact } from "react-icons/fa";
+import { FaCss3Alt, FaHtml5, FaReact, FaBootstrap } from "react-icons/fa";
 import { IoLogoJavascript } from 'react-icons/io';
 import { RiTailwindCssFill } from 'react-icons/ri';
 import { SiVite } from "react-icons/si";
 import { SiMongodb, SiMysql } from "react-icons/si";
 import SingleSkill from './SingleSkill';
-import { FaBootstrap } from "react-icons/fa6";
+
 import {motion} from 'framer-motion';
 import { fadeIn } from '../../framerMotion/variants';
 
@@ -50,20 +50,22 @@ const skills = [{
 
 const AllSkillsSM = () => {
   return (
-    <div className='grid md:grid-cols-4 sm:grid-cols-2 gap-12 my-12 '>
-      {skills.map((item,index)=>{
-        return <motion.div 
-        variants={fadeIn('up', index * 0.2)}
-            initial='hidden'
-            whileInView='show'
-            viewport={{ once: false, amount: 0.7 }}
-        key={index} className='flex flex-col items-center '>
-            <item.icon className='text-7xl text-orange '/>
-            <p className='text-center mt-4 text-white '>{item.skill}</p>
+    <div className="grid grid-cols-2 sm:grid-cols-3 gap-8 place-items-center my-12 w-full">
+      {skills.map((item, index) => (
+        <motion.div
+          key={index}
+          variants={fadeIn('up', index * 0.15)}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: false, amount: 0.6 }}
+          className="flex flex-col items-center"
+        >
+          <item.icon className="text-6xl text-orange" />
+          <p className="text-white mt-2 text-center">{item.skill}</p>
         </motion.div>
-      })}
+      ))}
     </div>
-  )
-}
+  );
+};
 
-export default AllSkillsSM
+export default AllSkillsSM;

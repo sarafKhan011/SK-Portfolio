@@ -25,8 +25,18 @@ const NavbarLinks = () => {
 
   return (
     <nav>
-      <ul
-        className='flex gap-6 text-white font-bold text-center lg:flex-row sm:flex-col lg:relative sm:absolute sm:top-[120%] left-[50%] -translate-x-[50%] lg:text-md sm:text-xl sm:w-full py-4'
+     <ul
+  className="flex flex-col sm:flex-row lg:flex-row items-center justify-center 
+  gap-6 text-white font-bold text-center 
+  text-lg sm:text-xl lg:text-md 
+  w-full 
+  mt-4 
+  py-4 
+  absolute top-[120%] left-1/2 -translate-x-1/2 
+  lg:relative lg:top-auto lg:left-auto lg:translate-x-0"
+
+
+       
         style={
           isMobile
             ? {

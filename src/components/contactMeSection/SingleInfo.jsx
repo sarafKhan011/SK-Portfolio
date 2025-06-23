@@ -3,8 +3,6 @@ import React from 'react';
 const SingleInfo = ({ text, Image }) => {
   const isEmail = text.includes('@');
   const isPhone = /^\+?\d[\d\s-]+$/.test(text);
-
-  // For address, assume anything else (not email or phone)
   const isAddress = !isEmail && !isPhone;
 
   let content = text;
@@ -15,13 +13,8 @@ const SingleInfo = ({ text, Image }) => {
     const phoneNumber = text.replace(/\s+/g, '');
     content = <a href={`tel:${phoneNumber}`} className="hover:underline">{text}</a>;
   } else if (isAddress) {
-    // Encode address for Google Maps query
     const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(text)}`;
-    content = (
-      <a href={mapsUrl} target="_blank" rel="noopener noreferrer" className="hover:underline">
-        {text}
-      </a>
-    );
+    content = <a href={mapsUrl} target="_blank" rel="noopener noreferrer" className="hover:underline">{text}</a>;
   }
 
   return (
