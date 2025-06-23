@@ -3,7 +3,7 @@
 @import "tailwindcss";
 
 @screens{
-  sm: 180px;
+  sm: 200px;
   md: 768px;
   xs:360px;
   lg:1024px;
@@ -35,8 +35,15 @@ animation{
   orangeMediumShadow: '10px 10px 200px 150px rgba(240,169,79,0.5)';
 }
 
-body{
+body {
   font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-width: 320px;
+  overflow-x: hidden;
+
+
 }
 /* @font{
   ['system-ui'];
