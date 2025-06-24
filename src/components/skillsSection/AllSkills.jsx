@@ -8,6 +8,7 @@ import SingleSkill from './SingleSkill';
 import { FaBootstrap } from "react-icons/fa6";
 import {motion} from 'framer-motion';
 import { fadeIn } from '../../framerMotion/variants';
+import { FaNodeJs } from "react-icons/fa";
 
 const skills = [{
     skill:'HTML',
@@ -44,7 +45,12 @@ const skills = [{
 {
     skill: 'bootstrap',
     icon: FaBootstrap,
+},
+{
+  skill: 'Node',
+  icon:  FaNodeJs,
 }
+
 ]
 
 const AllSkills = () => {

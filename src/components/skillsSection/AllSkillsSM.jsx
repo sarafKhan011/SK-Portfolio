@@ -5,7 +5,7 @@ import { RiTailwindCssFill } from 'react-icons/ri';
 import { SiVite } from "react-icons/si";
 import { SiMongodb, SiMysql } from "react-icons/si";
 import SingleSkill from './SingleSkill';
-
+import { FaNodeJs } from "react-icons/fa";
 import {motion} from 'framer-motion';
 import { fadeIn } from '../../framerMotion/variants';
 
@@ -45,6 +45,10 @@ const skills = [{
 {
     skill: 'bootstrap',
     icon: FaBootstrap,
+},
+{
+  skill: 'Node',
+  icon:  FaNodeJs,
 }
 ]
 
