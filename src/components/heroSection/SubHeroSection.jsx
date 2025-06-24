@@ -2,7 +2,7 @@ import React from 'react';
 
 const SubHeroSection = () => {
   return (
-    <div className='w-full border-y border-lightGray text-lightGray 
+    <div className='w-full border-y border-lightGray 
       flex flex-col md:flex-row justify-around items-center 
       gap-4 uppercase xl:text-4xl md:text-2xl sm:text-4xl text-white py-8 bg-lightBrown'>
 
