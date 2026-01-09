@@ -3,27 +3,24 @@ import React from 'react';
 const links = [
   { link: "About Me", section: "about" },
   { link: "Skills", section: "skills" },
-  // { link: "Experience", section: "experience" },
   { link: "Projects", section: "projects" },
   { link: "Contact", section: "contact" },
 ];
 
 const FooterMain = () => {
   return (
-    <footer className="px-4 mt-24 text-lightGray">
-      {/* Divider Line */}
-      <div className="w-full h-[1px] bg-lightGray mb-6"></div>
+    <footer className="w-full px-4 sm:px-6 lg:px-8 mt-24 text-lightGray">
+      <div className="w-full h-[1px] bg-lightGray mb-6" />
 
-      {/* Footer Content */}
-      <div className="max-w-[1200px] mx-auto md:flex justify-between items-center">
+      <div className="w-full max-w-full mx-auto flex flex-col md:flex-row justify-between items-center flex-wrap gap-4">
         <p className="text-2xl font-semibold">Mohammed Saraf Khan</p>
 
-        <ul className="flex flex-col sm:flex-row gap-4 text-lg items-center justify-center mt-4 sm:mt-4 ">
-          {links.map((item, index) => (
-            <li key={index}>
+        <ul className="flex flex-wrap justify-center gap-4 text-lg items-center">
+          {links.map((item) => (
+            <li key={item.section} className="group">
               <a
                 href={`#${item.section}`}
-                className="hover:text-lightBrown  transition-all duration-300 cursor-pointer"
+                className="cursor-pointer text-white hover:text-lightBrown transition-all duration-300"
               >
                 {item.link}
               </a>
@@ -32,8 +29,7 @@ const FooterMain = () => {
         </ul>
       </div>
 
-      {/* Copyright */}
-      <div className="max-w-[1200px] mx-auto text-center md:text-right mt-6 mb-12">
+      <div className="w-full max-w-full mx-auto text-center md:text-right mt-6 mb-12">
         <p className="text-sm text-lightBrown">
           © {new Date().getFullYear()} Mohammed Saraf Khan. All rights reserved.
         </p>

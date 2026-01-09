@@ -14,7 +14,7 @@ const AboutMeText = () => {
       </p>
 
       <a
-        href="/SarafK.pdf"
+        href="/CV-Saraf.pdf"
         download
         className="mt-10 flex items-center gap-2 border border-orange text-white rounded-full py-2 px-5 hover:bg-orange hover:text-white transition-all duration-300"
       >

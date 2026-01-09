@@ -26,6 +26,13 @@ const projects = [
     image: '/images/P-3.png',
     link: 'https://github.com/sarafKhan011/Car-Sale',
   },
+  {
+    name: 'SahwaAC',
+    year: 'Jun 2026',
+    align: 'left',
+    image: '/images/P-2.png',
+    link: 'https://sahwa-ac.vercel.app/',
+  },
 ];
 
 const ProjectMain = () => {
