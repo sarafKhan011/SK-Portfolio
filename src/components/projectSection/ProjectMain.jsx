@@ -27,7 +27,7 @@ const projects = [
     link: 'https://github.com/sarafKhan011/Car-Sale',
   },
   {
-    name: 'SahwaAC',
+    name: 'SahwaArabicCollage',
     year: 'Jun 2026',
     align: 'left',
     image: '/images/P-2.png',
