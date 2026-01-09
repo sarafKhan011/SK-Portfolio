@@ -16,7 +16,7 @@ function App() {
   return (
     <>
       <NavbarMain />
-      <main className="font-body flex flex-col items-center w-full overflow-hidden">
+      <main className="font-body  flex-col w-full overflow-hidden">
         <HeroMain />
         <SubHeroSection />
         <AboutMeMain />
@@ -24,10 +24,11 @@ function App() {
         <SubSkills />
         {/* <ExperienceMain /> */}
         <ProjectMain />
-        <ContactMeMain />
         {/* <HelperSection /> */}
+        <ContactMeMain />
+        <FooterMain />
       </main>
-      <FooterMain />
+   
     </>
   )
 }
