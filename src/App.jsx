@@ -25,7 +25,7 @@ function App() {
         {/* <ExperienceMain /> */}
         <ProjectMain />
         <ContactMeMain />
-        <HelperSection />
+        {/* <HelperSection /> */}
       </main>
       <FooterMain />
     </>
