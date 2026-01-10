@@ -5,19 +5,13 @@ import { motion } from 'framer-motion';
 import { fadeIn } from '../../framerMotion/variants';
 
 const projects = [
+
   {
-    name: 'Car Rental',
-    year: 'Mar 2023',
-    align: 'right',
-    image: '/images/P-1.png',
-    link: 'https://github.com/sarafKhan011/car-rental-.git',
-  },
-  {
-    name: 'Restaurant Table Reservation',
-    year: 'Dec 2024',
+    name: 'SahwaArabicCollage',
+    year: 'Jun 2026',
     align: 'left',
-    image: '/images/lap.jpg',
-    link: '#',
+    image: '/images/P-2.png',
+    link: 'https://sahwa-ac.vercel.app/',
   },
   {
     name: 'Car Sale',
@@ -27,12 +21,21 @@ const projects = [
     link: 'https://github.com/sarafKhan011/Car-Sale',
   },
   {
-    name: 'SahwaArabicCollage',
-    year: 'Jun 2026',
+    name: 'Restaurant Table Reservation',
+    year: 'Dec 2024',
     align: 'left',
-    image: '/images/P-2.png',
-    link: 'https://sahwa-ac.vercel.app/',
+    image: '/images/lap.jpg',
+    link: '#',
   },
+  {
+    
+    name: 'Car Rental',
+    year: 'Mar 2023',
+    align: 'right',
+    image: '/images/P-1.png',
+    link: 'https://github.com/sarafKhan011/car-rental-.git',
+  },
+ 
 ];
 
 const ProjectMain = () => {
